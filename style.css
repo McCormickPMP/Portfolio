@@ -1,0 +1,278 @@
+/*------------------------general section-----------------------------------*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+/*------------------------header/navbar section-------------------------------*/
+
+.navbar {
+    background-color:#3B413C;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+
+.navbar-brand img {
+    transition: .5s;
+}
+
+.navbar-brand img:hover {
+    filter: opacity(90%);
+}
+
+.navbar-nav li a {
+    color:#FFFFFF;
+    font-weight: 600;
+    text-align: left;
+    transition: .4s;
+}
+
+.navbar-nav li a:hover {
+    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+}
+
+/*------------------------jumbotron/banner section-----------------------------------*/
+
+.jumbotron {
+    text-align: center;
+    background-color: #58697Aff;
+    border-radius: 0;
+    color: #FFFFFF;
+    box-shadow: -3px 10px 10px rgb(66, 66, 66);
+}
+
+.jumbotron h1 {
+    font-size: 55px;
+}
+
+#main-logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+    -webkit-animation: glow 20s linear infinite;
+    -moz-animation: glow 20s linear infinite;
+    animation: glow 20s linear infinite;
+}
+
+#main-logo:hover {
+    animation: glow-hover .5s linear infinite;
+}
+
+@keyframes glow-hover {
+    0% { 
+        box-shadow: 0 0 0px white; 
+    }
+
+    25% { 
+        box-shadow: 0 0 50px white; 
+    }
+
+    50% { 
+        box-shadow: 0 0 100px white; 
+    }
+
+    75% {
+        box-shadow: 0 0 150px white;
+    }
+    100% {
+        box-shadow: 0 0 200px white;
+    }
+}
+
+/*------------------------about section-----------------------------------*/
+
+#about {
+    margin: 100px 0;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+#about-me-div {
+    text-align: right;
+}
+
+
+#about-me-text {
+    font-weight: 200;
+    text-align: justify;
+}
+
+
+
+#profile-pic {
+    width: 300px;
+    height: 375px;
+    box-shadow: 1px 10px 10px;
+}
+
+
+.skills {
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border: 1px solid black;
+    box-shadow: 1px 5px 5px;
+}
+
+.skills li {
+    padding-bottom: 10px;
+}
+
+.skill-list-title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 10px 0 0 10px;
+}
+
+/*------------------------portfolio section-----------------------------------*/
+
+#portfolio {
+    background-color: #58697Aff;
+    color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.portfolio-img-div {
+    text-align: center;
+}
+
+#portfolio img {
+    width: 350px;
+    height: 300px;
+}
+
+#wave-portfolio {
+    transform: rotate(180deg);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -1px;
+}
+
+.projects {
+    margin-top: 50px;
+}
+
+.project-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.project-cover {
+    transition: .3s;
+    margin-bottom: 60px;
+    
+}
+
+.project-cover:hover {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 1; 
+    background-color: #3B413C;
+    box-shadow: 0 0 20px 20px #3B413C;
+}
+
+.project-caption span {
+    visibility: visible;
+}
+
+.project-caption:hover span {
+    visibility: hidden;
+}
+
+/*------------------------contact section-----------------------------------*/
+
+#contact-title {
+    padding-top: 50px;
+}
+
+#form {
+    font-size: 20px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%
+}
+
+textarea:focus {
+    outline: none;
+}
+
+button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: .3s;
+}
+
+/*------------------------footer section-----------------------------------*/
+
+#footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-media-icon {
+    font-size: 50px;
+    color: black;
+    padding: 10px;
+}
+
+.social-media-icon:hover {
+    color: rgb(141, 140, 140);
+    position: relative;
+    top: -5px;
+}
+#footer-logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+#wave-footer {
+    filter: invert(100%);
+    transform: rotate(180deg);
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: -1px;
+}
