@@ -51,8 +51,20 @@ body {
     border-radius: 0;
     color: #FFFFFF;
     box-shadow: -3px 10px 10px rgb(66, 66, 66);
+    
+}
+#lakerocks
+{
+    margin-right: auto;
+    margin-left: auto;
 }
 
+.scale-image {
+    display: block;
+    width: auto;
+    max-width: 85%;
+    
+}
 .jumbotron h1 {
     font-size: 55px;
 }
